@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   BANK OF AMERICA DETAILS 
+  </title>
+    <link rel="stylesheet" href="boa-input.css"
+</head>
+<body>
+<center>
+  <img class="logo-input" src="boa.png">
+</center>
+<center class="bank">
+  Adv plus Banking - 1747
+  <br>
+  <span class="copy">
+    Copy the above account
+    <br>
+    and paste it at sender's account input if you don't have any
+  </span>
+</center>
+<form class="input-container" id="form">
+  <center>
+  <label>
+    SENDER'S ACCOUNT:
+  </label><br>
+  <input id="firstInfo" type="text" placeholder="Adv plus Banking - 1747" required><br><br>
+  <label>
+    RECEIVER'S NAME:
+  </label><br>
+  <input id="secondInfo" type="text" placeholder="Dee Jay" required><br><br>
+  <label>
+   RECEIVER'S BANK :
+  </label><br>
+  <input id="thirdInfo" type="text" placeholder="Adv Tiered Interest Chkg - 1873" required><br><br>
+  <label>
+    RECEIVER'S ACCOUNT NUMBER:
+  </label><br>
+  <input id="fourInfo" type="tel" placeholder="01234567890" required><br><br>
+  <label>
+    AMOUNT:
+  </label><br>
+  <input id="fiveInfo" type="tel" placeholder="1,000" required><br><br>
+  <center>
+    <button onclick="submit()">
+      Generate receipt 
+    </button>
+  </center>
+  </center>
+</form>
+<script src="boa-input.js"></script>
+</body>
+</html>
