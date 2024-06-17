@@ -32,34 +32,3 @@ current_year = date_data.getFullYear()
 
 document.getElementById('year').textContent = `${current_year}`
 
-/*function formatNumber() {
-    const input = document.querySelector('.number-input').value;
-    
-    document.querySelector('.formatted-number').textContent = formattedNumber;
-}
-*/
-
-const amount = addCommas(input);
-function addCommas(number) {
-    if (!number) return '';
-
-    number = number.replace(/[^0-9]/g, ''); // Remove any non-numeric characters
-
-    const numStr = number.toString();
-    const length = numStr.length;
-
-    if (length <= 4) {
-        return numStr;
-    }
-
-    if (length == 5) {
-        return numStr.slice(0, 2) + ',' + numStr.slice(2);
-    }
-
-    if (length == 6) {
-        return numStr.slice(0, 3) + ',' + numStr.slice(3);
-    }
-
-    const index = (length - 1) % 3 + 1;
-    return numStr.slice(0, index) + ',' + numStr.slice(index).match(/.{1,3}/g).join(',');
-}
