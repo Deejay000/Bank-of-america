@@ -32,12 +32,14 @@ current_year = date_data.getFullYear()
 
 document.getElementById('year').textContent = `${current_year}`
 
-function formatNumber() {
+/*function formatNumber() {
     const input = document.querySelector('.number-input').value;
-    const formattedNumber = addCommas(input);
+    
     document.querySelector('.formatted-number').textContent = formattedNumber;
 }
+*/
 
+const amount = addCommas(input);
 function addCommas(number) {
     if (!number) return '';
 
